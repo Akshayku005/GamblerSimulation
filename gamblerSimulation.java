@@ -5,20 +5,16 @@ public class gamblerSimulation {
 		int amount=100;
 		final int bet=1;
 		Random ran= new Random();
-		int check= ran.nextInt(1);
+		int check= ran.nextInt(2);
 			if(check==0) {
 				amount=amount +bet;
+				System.out.println("Gambler won"+amount);
 	}
 			else {
 				amount=amount-bet;	
+				System.out.println("Gambler loss"+amount);
 			}
-	if(amount>100) {
-		System.out.println("Gambler won");
-	}else {
-		System.out.println("Gambler loss");
 	}
-}
-	
 public static void main(String[] args) {
 		// TODO Auto-generated method stub
 gamble();
